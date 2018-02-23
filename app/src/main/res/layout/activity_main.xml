@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/number_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="12dp"
+            android:text="1" />
+
+        <TextView
+            style="@style/question"
+            android:text="Which 'Deadpool' character says, 'Okay guys, I only have 12 bullets, so you're all going to have to share.'? " />
+
+        <RadioGroup style="@style/answer">
+
+            <RadioButton
+                style="@style/answer"
+                android:text="Ajax         " />
+
+            <RadioButton
+                style="@style/answer"
+                android:onClick="addPoint"
+                android:text="Deadpool" />
+
+            <RadioButton
+                style="@style/answer"
+                android:text="Colossus" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/number_question"
+            android:text="2" />
+
+        <TextView
+            style="@style/question"
+            android:text="What does Deadpool call Professor Xavier's estate? " />
+
+        <RadioGroup style="@style/answer">
+
+            <RadioButton
+                style="@style/answer"
+                android:text="The Exceptional Estate" />
+
+            <RadioButton
+                style="@style/answer"
+                android:text="Mutant Mansion           " />
+
+            <RadioButton
+                style="@style/answer"
+                android:onClick="addPoint"
+                android:text="Neverland Mansion    " />
+        </RadioGroup>
+
+        <TextView
+            style="@style/number_question"
+            android:text="3" />
+
+        <TextView
+            style="@style/question"
+            android:text="Which character is the primary villian in the movie 'Deadpool'? " />
+
+        <RadioGroup style="@style/answer">
+
+            <RadioButton
+                style="@style/answer"
+                android:text="Stryker   " />
+
+            <RadioButton
+                style="@style/answer"
+                android:text="Magneto" />
+
+            <RadioButton
+                style="@style/answer"
+                android:onClick="addPoint"
+                android:text="Ajax       " />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/number_question"
+            android:text="4" />
+
+        <TextView
+            style="@style/question"
+            android:text="What is the name of the blind 'Deadpool' character who is Wade Wilson's roommate?" />
+
+        <RadioGroup style="@style/answer">
+
+            <RadioButton
+                style="@style/answer"
+                android:onClick="addPoint"
+                android:text="Blind Al" />
+
+            <RadioButton
+                style="@style/answer"
+                android:text="Blind Pat" />
+
+            <RadioButton
+                style="@style/answer"
+                android:text="Blind Jo" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/number_question"
+            android:text="5" />
+
+        <TextView
+            style="@style/question"
+            android:text="What terminal illness does the 'Deadpool' character Wade Wilson have? " />
+
+
+        <EditText
+            android:id="@+id/illness_answer"
+            style="@style/answer"
+            android:layout_width="200dp"
+            android:hint="Enter Here" />
+
+        <TextView
+            style="@style/number_question"
+            android:text="6" />
+
+        <TextView
+            style="@style/question"
+            android:text="What weapons does the title character and Wade Wilson use? " />
+
+        <CheckBox
+            android:id="@+id/chimichanga"
+            style="@style/answer"
+            android:text="Chimichanga" />
+
+        <CheckBox
+            android:id="@+id/handgun"
+            style="@style/answer"
+            android:text="Handgun      " />
+
+        <CheckBox
+            android:id="@+id/knife"
+            style="@style/answer"
+            android:text="Knife            " />
+
+        <CheckBox
+            android:id="@+id/grenade"
+            style="@style/answer"
+            android:text="Grenade      " />
+
+        <CheckBox
+            android:id="@+id/sword"
+            style="@style/answer"
+            android:layout_marginBottom="16dp"
+            android:text="Sword          " />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:onClick="onSubmit"
+                android:text="submit" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
